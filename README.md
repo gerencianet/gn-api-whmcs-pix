@@ -29,13 +29,9 @@ includes/hooks/
 ### <a id="conversao"></a>Converter certificado .p12 para .pem
 Todas as requisições devem conter um certificado de segurança que será fornecido pela Gerencianet dentro da sua conta, no formato PFX(.p12). Essa exigência está descrita na integra no [manual de segurança do PIX](https://www.bcb.gov.br/estabilidadefinanceira/comunicacaodados).
 
-Caso ainda não tenha seu certificado, basta seguir o passo a passo do link a seguir para gerar um novo: [CLIQUE AQUI](https://gerencianet.com.br/artigo/como-gerar-o-certificado-para-usar-a-api-pix/)
+Caso ainda não tenha seu certificado, basta seguir o passo a passo do link a seguir para gerar um novo: [Clique Aqui](https://gerencianet.com.br/artigo/como-gerar-o-certificado-para-usar-a-api-pix/)
 
-Para converter seu certificado de .p12 para .pem, basta utilizar o comando a seguir:
-```
-# Gerar certificado e chave em único arquivo | O comando abaixo deve ser executado em ambiente linux
-openssl pkcs12 -in certificado.p12 -out certificado.pem -nodes
-```
+Para converter seu certificado de .p12 para .pem, basta utilizar o conversor de certificados disponibilizado pela Gerencianet no link: [Clique aqui](https://gnetbr.com/HylSpVZzLu)
 ## Configuração do Módulo
 
 ![Tela de Configuração](https://gnetbr.com/B1glJBqjBO)
