@@ -5,8 +5,8 @@
 1. Faça o download da última versão do módulo;
 2. Descompacte o arquivo baixado;
 3. Copie o arquivo **gerencianetpix.php** e a pasta **gerencianetpix**, para o diretório **/modules/gateways** da instalação do WHMCS;
-4. Altere as permissões do arquivo copiado utilizando o comando: `chmod 777 /modules/gateways/gerencianetpix.php`
-5. Altere as permissões da pasta copiada utilizando o comando: `chmod 777 /modules/gateways/gerencianetpix/ -R`
+4. Altere as permissões do arquivo copiado utilizando o comando: `chmod 777 modules/gateways/gerencianetpix.php`
+5. Altere as permissões da pasta copiada utilizando o comando: `chmod 777 modules/gateways/gerencianetpix/ -R`
 6. Copie o arquivo **gerencianetpix.php**, disponível no diretório **callback**, para o diretório **modules/gateways/callback**. Ele deve estar no caminho: *modules/gateways/callback/gerencianetpix.php*
 7. Altere as permissões do arquivo copiado utilizando o comando: `chmod 777 modules/gateways/callback/gerencianetpix.php`
 8. Copie o arquivo **gerencianet.php**, disponível no diretório **hooks**, para o diretório **includes/hooks**. Ele deve estar no caminho *includes/hooks/gerencianet.php*
