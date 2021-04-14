@@ -9,15 +9,15 @@
 5. Altere as permissões da pasta copiada utilizando o comando: `chmod 777 modules/gateways/gerencianetpix/ -R`
 6. Copie o arquivo **gerencianetpix.php**, disponível no diretório **callback**, para o diretório **modules/gateways/callback**. Ele deve estar no caminho: *modules/gateways/callback/gerencianetpix.php*
 7. Altere as permissões do arquivo copiado utilizando o comando: `chmod 777 modules/gateways/callback/gerencianetpix.php`
-8. Copie o arquivo **gerencianet.php**, disponível no diretório **hooks**, para o diretório **includes/hooks**. Ele deve estar no caminho *includes/hooks/gerencianet.php*
-9. Altere as permissões do arquivo copiado utilizando o comando: `chmod 777 includes/hooks/gerencianet.php`
+8. Copie o arquivo **gerencianetpix.php**, disponível no diretório **hooks**, para o diretório **includes/hooks**. Ele deve estar no caminho *includes/hooks/gerencianetpix.php*
+9. Altere as permissões do arquivo copiado utilizando o comando: `chmod 777 includes/hooks/gerencianetpix.php`
 10. Crie uma pasta na raiz do seu servidor e insira seu certificado na pasta. Vale lembrar que **seu certificado deve estar no formato *.pem***. Você encontra o passo a passo de conversão na sessão: [**Converter certificado .p12 para .pem**](#conversao)
 
 Ao final da instalação, os arquivos do módulo Gerencianet devem estar na seguinte estrutura no WHMCS:
 
 ```
 includes/hooks/
-  |- gerencianet.php
+  |- gerencianetpix.php
  modules/gateways/
   |- callback/gerencianetpix.php
   |- gerencianetpix/
