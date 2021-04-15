@@ -29,7 +29,7 @@ Todas as requisições devem conter um certificado de segurança que será forne
 
 Caso ainda não tenha seu certificado, basta seguir o passo a passo do link a seguir para gerar um novo: [Clique Aqui](https://gerencianet.com.br/artigo/como-gerar-o-certificado-para-usar-a-api-pix/)
 
-Para converter seu certificado de .p12 para .pem, basta utilizar o conversor de certificados disponibilizado pela Gerencianet no link: [Clique aqui](https://gnetbr.com/HylSpVZzLu)
+Para converter seu certificado de .p12 para .pem, basta utilizar o conversor de certificados disponibilizado pela Gerencianet no link: [Clique aqui](https://pix.gerencianet.com.br/ferramentas/conversorGerencianet.exe)
 ## Configuração do Módulo
 
 ![Tela de Configuração](https://gnetbr.com/B1glJBqjBO)
