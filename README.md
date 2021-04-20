@@ -37,9 +37,10 @@ Para converter seu certificado de .p12 para .pem, basta utilizar o conversor de 
 2. **Client_Secret Produção:** Deve ser preenchido com o client_secret de produção de sua conta Gerencianet. Este campo é obrigatório e pode ser encontrado no menu "API" ->  "Minhas Aplicações". Em seguida, selecione sua aplicação criada, conforme é mostrado no [link](https://gnetbr.com/Ske9THqjrO);
 3. **Client_Id Desenvolvimento:** Deve ser preenchido com o client_id de desenvolvimento de sua conta Gerencianet. Este campo é obrigatório e pode ser encontrado no menu "API" -> "Minhas Aplicações". Em seguida, selecione sua aplicação criada, conforme é mostrado no [link](https://gnetbr.com/BJe-vIciHd);
 4. **Client_Secret Desenvolvimento:** Deve ser preenchido com o client_secret de desenvolvimento de sua conta Gerencianet. Este campo é obrigatório e pode ser encontrado no menu "API" -> "Minhas Aplicações". Em seguida, selecione sua aplicação criada, conforme é mostrado no [link](https://gnetbr.com/BJe-vIciHd);
-5. **Sandbox:** Caso seja de seu interesse, habilite o ambiente de testes da API Gerencianet;
-6. **Debug:** Neste campo é possível habilitar os logs de transação e de erros da Gerencianet no painel WHMCS;
-7. **Certificado Pix** Deve ser preenchido com o caminho do certificado salvo em seu servidor no passo 10 da instalação;
-8. **Desconto:** Informe o valor de desconto que deverá ser aplicado ao pix gerado exclusivamente pela Gerencianet;
-9. **Validade da Cobrança** Deve ser informado o período de validade em dias da cobrança PIX;
-10. **Mtls** Entenda os riscos de não configurar o mTLS acessando o link https://gnetbr.com/rke4baDVyd.
+5. **Chave PIX:** Se utilizado CNPJ, informar sem pontos e espaços, ex. 11111111111121;
+6. **Sandbox:** Caso seja de seu interesse, habilite o ambiente de testes da API Gerencianet;
+7. **Debug:** Neste campo é possível habilitar os logs de transação e de erros da Gerencianet no painel WHMCS;
+8. **Certificado Pix** Deve ser preenchido com o caminho do certificado salvo em seu servidor no passo 10 da instalação;
+9. **Desconto:** Informe o valor de desconto que deverá ser aplicado ao pix gerado exclusivamente pela Gerencianet;
+10. **Validade da Cobrança** Deve ser informado o período de validade em dias da cobrança PIX;
+11. **Mtls** Entenda os riscos de não configurar o mTLS acessando o link https://gnetbr.com/rke4baDVyd.
