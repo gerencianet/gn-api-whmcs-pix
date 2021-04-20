@@ -37,7 +37,10 @@ function createTable($tableName, Closure $callback)
     }
 }
 
-/**
+if (function_exists('select')) {
+   /** Function already loaded, skipping */
+} else {
+    /**
  * Set the columns to be selected
  *
  * @param string  $tableName
@@ -68,6 +71,8 @@ function select($tableName, $conditions, $fields, $getFirst = true)
     } catch (\Exception $e) {
         showException('DataBase Exception', array($e->getMessage()));
     }
+}
+
 }
 
 /**
@@ -119,63 +124,75 @@ function getValue($tableName, $conditions, $column)
     }
 }
 
-/**
- * Insert a new record into the database
- *
- * @param string $tableName
- * @param array  $dataToInsert
- */
-function insert($tableName, $dataToInsert)
-{
-    try {
-        Capsule::table($tableName)->insert($dataToInsert);
+if (function_exists('insert')) {
+   /** Function already loaded, skipping */
+} else {
+    /**
+     * Insert a new record into the database
+     *
+     * @param string $tableName
+     * @param array  $dataToInsert
+     */
+    function insert($tableName, $dataToInsert)
+    {
+        try {
+            Capsule::table($tableName)->insert($dataToInsert);
 
-    } catch (\Exception $e) {
-        showException('DataBase Exception', array($e->getMessage()));
+        } catch (\Exception $e) {
+            showException('DataBase Exception', array($e->getMessage()));
+        }
     }
 }
 
-/**
- * Update a record in the database
- *
- * @param string $tableName
- * @param array  $conditions
- * @param array  $dataToUpdate
- */
-function update($tableName, $conditions, $dataToUpdate)
-{
-    try {
-        $gerencianetData = Capsule::table($tableName);
+if (function_exists('update')) {
+   /** Function already loaded, skipping */
+} else {
+    /**
+     * Update a record in the database
+     *
+     * @param string $tableName
+     * @param array  $conditions
+     * @param array  $dataToUpdate
+     */
+    function update($tableName, $conditions, $dataToUpdate)
+    {
+        try {
+            $gerencianetData = Capsule::table($tableName);
 
-        foreach ($conditions as $key => $value) {
-            $gerencianetData = $gerencianetData->where($key, $value);
-        }
+            foreach ($conditions as $key => $value) {
+                $gerencianetData = $gerencianetData->where($key, $value);
+            }
 
-        $gerencianetData->update($dataToUpdate);
+            $gerencianetData->update($dataToUpdate);
 
-    } catch (\Exception $e) {
-        showException('DataBase Exception', array($e->getMessage()));
-    } 
+        } catch (\Exception $e) {
+            showException('DataBase Exception', array($e->getMessage()));
+        } 
+    }
 }
+if (function_exists('delete')) {
+   /** Function already loaded, skipping */
+} else {
 
-/**
- * Delete a record from the database
- *
- * @param string $tableName
- * @param array  $conditions
- */
-function delete($tableName, $conditions)
-{
-    try {
-        $gerencianetData = Capsule::table($tableName);
+    /**
+     * Delete a record from the database
+     *
+     * @param string $tableName
+     * @param array  $conditions
+     */
+    function delete($tableName, $conditions)
+    {
+        try {
+            $gerencianetData = Capsule::table($tableName);
 
-        foreach ($conditions as $key => $value) {
-            $gerencianetData = $gerencianetData->where($key, $value);
-        }
+            foreach ($conditions as $key => $value) {
+                $gerencianetData = $gerencianetData->where($key, $value);
+            }
 
-        $gerencianetData->delete();
+            $gerencianetData->delete();
 
-    } catch (\Exception $e) {
-        showException('DataBase Exception', array($e->getMessage()));
-    } 
+        } catch (\Exception $e) {
+            showException('DataBase Exception', array($e->getMessage()));
+        } 
+    }
 }
