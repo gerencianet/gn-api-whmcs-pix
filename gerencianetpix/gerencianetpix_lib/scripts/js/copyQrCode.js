@@ -21,3 +21,7 @@ function copyQrCode(textToCopy) {
 }
 // Displays the QRCode in PDF printing
 $( ".payment-btn-container" ).removeClass( "d-print-none" );
+
+window.onload = function () {
+    document.querySelector("body > div.container-fluid.invoice-container > div:nth-child(4) > div.col-12.col-sm-6.order-sm-last.text-sm-right.invoice-col.right").innerHTML = ""
+};

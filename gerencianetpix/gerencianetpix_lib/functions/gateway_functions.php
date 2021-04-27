@@ -70,7 +70,16 @@ function createPixCharge($api_instance, $gatewayParams)
                 'original' => strval($pixAmount) // String value from amount
             ],
             'chave' => $pixKey,
-            'solicitacaoPagador' => $pixDescription
+            "infoAdicionais" => [
+                [
+                    "nome" => "Pagamento em",
+                    "valor" => $gatewayParams['companyname']
+                ],
+                [
+                    "nome" => "Número do Pedido",
+                    "valor" => "#".$gatewayParams['invoiceid']
+                ]
+            ]
         ];
     
         return createImmediateCharge($api_instance, $requestBody);
