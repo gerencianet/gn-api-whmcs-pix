@@ -1,3 +1,4 @@
+## MÓDULO DESCONTINUADO: Este módulo não receberá mais atualizações. Pagamentos dos tipos pix, boleto e cartão foram incorporados em um único módulo. Faça o download clicando [aqui](https://github.com/gerencianet/gn-api-whmcs)
 # Módulo Gerencianet Pix para WHMCS
 
 ## Instalação
